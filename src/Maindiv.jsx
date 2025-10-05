@@ -1,6 +1,7 @@
 import LightRays from './Aurora';
 import Shuffle from './Shuffle';
 import DecryptedText from './DecryptedText';
+import Rounded from './Rounded';
 
 export default function Maindiv() {
     return (
@@ -19,7 +20,7 @@ export default function Maindiv() {
                     className="custom-rays "
                 />
             </div>
-            <div className="absolute top-[40%]  left-[50%] -translate-x-[50%] -translate-y-[50%] text-4xl font-bold text-white">
+            <div className=" absolute top-[40%]  left-[50%] -translate-x-[50%] -translate-y-[50%] lg:text-4xl font-bold text-white">
 
                 <div>
                     <DecryptedText
@@ -30,8 +31,9 @@ export default function Maindiv() {
                 </div>
 
             </div>
-            <div className="absolute top-[50%]  left-[50%] -translate-x-[50%] -translate-y-[50%] text-5xl font-bold text-white">
-                <Shuffle
+            <div className="absolute top-[50%]  left-[50%] -translate-x-[50%] -translate-y-[50%] lg:text-5xl font-bold text-white">
+                <div>
+                    <Shuffle
                     text="Noor A Alam"
                     shuffleDirection="right"
                     duration={0.35}
@@ -43,7 +45,15 @@ export default function Maindiv() {
                     triggerOnce={true}
                     triggerOnHover={true}
                     respectReducedMotion={true}
+                    
                 />
+                </div>
+            </div>
+
+            <div className="absolute top-[40%]  left-[50%] -translate-x-[50%] -translate-y-[50%] ">
+                <div>
+                    <Rounded />
+                </div>
             </div>
         </div>
     )
